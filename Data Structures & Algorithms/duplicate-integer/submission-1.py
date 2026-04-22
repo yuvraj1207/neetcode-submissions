@@ -1,10 +1,12 @@
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-        seen = set()
+        # seen = set()
         
-        for num in nums:
-            if num in seen:   
-                return True
-            seen.add(num)
+        # for num in nums:
+        #     if num in seen:   
+        #         return True
+        #     seen.add(num) 
 
-        return False
+        # return False
+
+        return len(nums) != len(set(nums))  #set doesn't store the duplicate 
